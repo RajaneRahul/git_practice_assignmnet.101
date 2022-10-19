@@ -1,12 +1,16 @@
 //Problem 1 : Check whether a number is Prime or not
 
-let number =[1,2,3,4,5]
- 
-for(let i=1;i<=5;i++){
+let num =13;
+ let count=0;
+for(let i=1;i<num;i++){
    
-   if(i%2==1){
-     console.log( "Prime");
-}else{
-    console.log("Not Prime");
+   if(num%i==0){
+     count++
+}
+}
+if(count==2){
+    console.log("yes");
    }
+else{
+console.log("No")
 }
